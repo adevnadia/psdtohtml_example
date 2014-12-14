@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BasicApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../static/styles/app.min.css">
+
+	<!--[if lte IE 8]>
+	<link href="../static/styles/ie.css" rel="stylesheet">
+	<![endif]-->
+</head>
+<body>
+
+<!-- header -->
+<div class="b-header">
+	<a href="#" class="b-header-logo"><img src="../static/images/logo.png" alt="Avada"></a>
+	<ul class="b-header-menu">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Features</a></li>
+		<li><a href="#">Shortcodes</a></li>
+		<li><a href="#">Pages</a></li>
+		<li><a href="#">Portfolio</a></li>
+		<li class="active"><a href="#">Blog</a></li>
+	</ul>
+</div>
+
+<div class="b-underheader">
+	<div class="b-underheader-body">
+		<h1>Shop Single Page With Sidebar</h1>
+
+		<ul class="breadcrumbs">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">Sidebar</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+
+<!-- main content -->
+<div class="b-main-content">
+	<div class="b-sidebar-column">
+		<!-- login form -->
+		<div class="b-sidebar-block b-login-form">
+			<div class="title">Woo Login</div>
+			<div class="b-form-row">
+				<input type="text" class="b-form-input" placeholder="Username">
+			</div>
+			<div class="b-form-row">
+				<input type="password" class="b-form-input" placeholder="Password">
+			</div>
+			<div class="b-form-row">
+				<button class="b-button green right">login</button>
+				<div class="b-form-checkbox"><input type="checkbox" id="rememberMe"><label for="rememberMe">Remember me</label></div>
+			</div>
+		</div>
+		<!-- end login form -->
+
+		<!-- search form -->
+		<div class="b-sidebar-block">
+			<div class="title">Woo Product Search</div>
+			<div class="b-form-row">
+				<input type="text" class="b-form-input" placeholder="Search...">
+			</div>
+		</div>
+		<!-- end search form -->
+
+		<!-- tags -->
+		<div class="b-sidebar-block">
+			<div class="title">Woo Product Tags</div>
+			<ul class="b-tags-list">
+				<li><a href="#">2013</a></li>
+				<li><a href="#">New Releases</a></li>
+				<li><a href="#">Tech</a></li>
+				<li><a href="#">Lifestsyle</a></li>
+				<li><a href="#">Entertainment</a></li>
+				<li><a href="#">TV</a></li>
+			</ul>
+		</div>
+		<!-- end tags -->
+
+		<!-- best sellers -->
+		<div class="b-sidebar-block">
+			<div class="title">Woo Best Sellers</div>
+			<ul class="b-product-list-small">
+				<li>
+					<div class="photo"><a href="#"><img src="../static/images/photo1.jpg"></a></div>
+					<div class="text">
+						<div class="title"><a href="#">Product Title</a></div>
+						<div class="price">$85.00</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo"><a href="#"><img src="../static/images/photo1.jpg"></a></div>
+					<div class="text">
+						<div class="title"><a href="#">Product Title</a></div>
+						<div class="price">$85.00</div>
+					</div>
+				</li>
+				<li>
+					<div class="text">
+						<div class="title"><a href="#">Product Title</a></div>
+						<div class="price has-old">$85.00</div>
+						<div class="price old">$95.00</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- end best sellers -->
+
+		<!-- categories -->
+		<div class="b-sidebar-block">
+			<div class="title">Woo Best Sellers</div>
+			<ul class="b-categories-list">
+				<li><a href="#">Graphic Design</a>
+				<li><a href="#">Web Design & Development</a></li>
+			</ul>
+		</div>
+		<!-- end categories -->
+	</div>
+
+	<div class="b-content-column">
+		<div class="b-content-column-inner">
+			<!-- product item -->
+			<div class="b-product-item">
+				<div class="b-product-item-content">
+					<div class="title">Product Title</div>
+					<div class="price">
+						<span class="old">60$</span>
+						85$
+					</div>
+					<div class="description">
+						<p>Suspendisse pretium orci vitae lacus commodo sed porttitor diam faucibus. Donec vitae suscipit mi. In sed metus id lectus tristique molestie. Integer mi ante, pulvinar sit amet posuere viverra, suscipit id quam.</p>
+						<p>Suspendisse pretium orci vitae lacus commodo sed porttitor diam faucibus. Donec vitae suscipit mi. In sed metus id lectus tristique molestie. Integer mi ante, pulvinar sit amet posuere viverra, suscipit id quam.</p>
+					</div>
+					<div class="b-product-to-basket">
+						<ul class="control">
+							<li>-</li>
+							<li><input type="text" value="1" disabled></li>
+							<li>+</li>
+						</ul>
+						<button class="b-button green">Add to cart</button>
+					</div>
+				</div>
+
+				<div class="b-product-item-photos">
+					<div class="large"><img src="../static/images/photo2.jpg"></div>
+					<ul class="mini-list">
+						<li><img src="../static/images/photo2.jpg"></li>
+						<li><img src="../static/images/photo2.jpg"></li>
+						<li><img src="../static/images/photo2.jpg"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end product item -->
+
+			<!-- product sharing -->
+			<ul class="b-product-sharing">
+				<li>
+					<a href="#">
+						<span class="b-ico-round"><i class="fa fa-facebook"></i></span>
+						<span class="text">Share on facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="b-ico-round"><i class="fa fa-twitter"></i></span>
+						<span class="text">Tweet this product</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="b-ico-round"><i class="fa fa-pinterest"></i></span>
+						<span class="text">Pin this product</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="b-ico-round"><i class="fa fa-envelope-o"></i></span>
+						<span class="text">Email this product</span>
+					</a>
+				</li>
+			</ul>
+			<!-- end product sharing -->
+
+			<!-- You may also like -->
+			<div class="b-catalog-list-block">
+				<div class="b-catalog-list-title"><h3>You may also like</h3></div>
+				<ul class="b-catalog-list">
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner">
+							<div class="photo"><a href="#"><img src="../static/images/photo3.jpg"></a></div>
+							<div class="title"><a href="#">Product title</a></div>
+							<div class="price">85$</div>
+							<div class="control">
+								<a href="#" class="left"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+								<a href="#" class="right"><i class="fa fa-list"></i> Details</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- end You may also like -->
+		</div>
+	</div>
+</div>
+<!-- end main content -->
+
+</body>
+</html>

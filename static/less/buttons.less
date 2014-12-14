@@ -1,0 +1,32 @@
+.b-button {
+	margin:0px;
+	border:0px;
+	background:#f6f6f6;
+	border-radius:3px;
+	font-size:13px;
+	line-height:16px;
+	color:@defaultTextColor;
+	cursor:pointer;
+	.transition(0.25s background);
+	min-width:72px;
+	min-height:25px;
+	text-transform:uppercase;
+	padding:8px 10px;
+
+	&:hover {
+		background:darken(#f6f6f6, 40%);
+	}
+
+	&.green {
+		background:#a2db42;
+		#gradient > .vertical(#d3eb92, #a2db42);
+		border:1px solid #abdb54;
+		color:#54770f;
+		background-position: 0 0;
+
+		&:hover {
+			background-position: 0 -40px;
+			.box-shadow(inset 0px 0px 15px 0px darken(#a2db42, 10%));
+		}
+	}
+}
